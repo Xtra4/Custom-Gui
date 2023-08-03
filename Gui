@@ -1,26 +1,3 @@
---[[
--- THIS SCRIPT HAS BEEN CODED BY RAFA (discord.gg/MilkUp)
--- DON'T BE A STUPID SKIDDIE THAT STEAL PEOPLE CODE AND PUT ON A SHIT PAID (or "watch ad to get key") SCRIPT
--- hi Project WD please don't steal my code again thx
-
--- For Preston:
--- Sorry for any incovenience I don't make any malicous script like mail/bank stealers, trade scam and this shit, just auto-farm and QoL scripts, feel free to use this repo to fix any vulnerability on your game
---]]
-
--- Join us at 
--- discord.gg/MilkUp
-
-
-
-
---[[
--- TODO LIST:
--- • Huge notifier on Discord Webhook (its ez but I'm lazy)
--- • Auto quest
--- • Improve Bank Index with "Auto buy storage upgrades" (+ withdraw needed diamonds from bank)
---]]
-
-
 -- Important Variables
 local SCRIPT_NAME = "Rafa PSX GUI"
 local SCRIPT_VERSION = "v0.4" -- Hey rafa remember to change it before updating lmao
@@ -518,9 +495,9 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 or game.PlaceId == 
 	
 
 	local Window = Rayfield:CreateWindow({
-	   Name = "Pet Simulator GUI | by Rafa ",
-	   LoadingTitle = SCRIPT_NAME .. " " .. SCRIPT_VERSION,
-	   LoadingSubtitle = "by Rafa",
+	   Name = "Pet Simulator GUI | by Xtra ",
+	   LoadingTitle = "Xtras Gui"
+	   LoadingSubtitle = "by Xtra",
 	   ConfigurationSaving = {
 		  Enabled = true,
 		  FolderName = "Rafa",
@@ -787,7 +764,7 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 or game.PlaceId == 
 	autoFarmTab:CreateToggle({
 		Name = "Collect Drops",
 		SectionParent = farmUtilities,
-		CurrentValue = false,
+		CurrentValue = true,
 		Flag = "FarmUtilities_CollectDrops", 
 		Callback = function(Value) 
 			FarmUtilities_CollectDrops = Value
@@ -863,7 +840,7 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 or game.PlaceId == 
 	autoFarmTab:CreateToggle({
 		Name = "Fast Pets",
 		SectionParent = farmUtilities,
-		CurrentValue = false,
+		CurrentValue = true,
 		Flag = "FarmUtilities_FastPets", 
 		Callback = function(Value) 
 			fastPets = Value
@@ -874,7 +851,7 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 or game.PlaceId == 
 	autoFarmTab:CreateToggle({
 		Name = "Instant Fall Coins",
 		SectionParent = farmUtilities,
-		CurrentValue = false,
+		CurrentValue = true,
 		Flag = "FarmUtilities_InstantFallCoins", 
 		Callback = function(Value) 
 			instantFall = Value
